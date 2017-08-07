@@ -1,0 +1,201 @@
+body
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  font-size: .12rem
+  display: flex
+  flex-direction: column
+  background: #f3f3f3
+
+.header
+  height: .5rem
+  position: relative
+  background: #ffffff
+  & > a:last-child
+    position: absolute
+    right: .22rem
+    top: 0
+    font-size: .12rem
+    color: #87919f
+    line-height: .5rem
+    .fa
+      transform: scale(1.8)
+  h1
+    height: 100%
+    width: 40%
+    margin: 0 auto
+    a
+      display: block
+      float: left
+      font-size: .14rem
+      color: #1e1e1e
+      line-height: .47rem
+      width: 50%
+      height: .47rem
+      text-align: center
+      border-bottom: 3px solid #ffffff
+      &:hover, &.on
+        color: #fd3454
+        border-bottom: 3px solid #fd3454
+
+.content
+  flex: 1
+  overflow-y: scroll
+  nav
+    display: flex
+    padding: .08rem .2rem
+    box-sizing: border-box
+    width: 100%
+    height: .5rem
+    a
+      flex: 1
+      font-size: .14rem
+      color: #60606b
+      text-align: center
+      line-height: .30rem
+      background: #ffffff
+      border: 2px solid #d7d7d7
+      &:hover, &.cur
+        color: #ffffff
+        background: #fe4d4d
+        border: 2px solid #fe4d4d
+      &:nth-child(1)
+        border-radius: .04rem 0 0 .04rem
+        border-right: none
+      &:nth-child(2)
+        border-right: none
+        border-left: none
+      &:nth-child(3)
+        border-radius: 0 .04rem .04rem 0
+        border-left: none
+  .con-box
+    background: #ffffff
+    .menu
+      height: .38rem
+      display: flex
+      .ul-box
+        flex: 1
+        overflow: hidden
+        ul
+          height: 100%
+          width: 200%
+          display: flex
+          li
+            float: left
+            flex: 1
+            text-align: center
+            &:hover, &.licur
+              a
+                color: #fe4d4d
+            a
+              display: block
+              width: 100%
+              height: .18rem
+              line-height: .18rem
+              margin-top: .1rem
+              border-right: 2px solid #f8f8f8
+      p
+        width: .7rem
+        border-left: 2px solid #f8f8f8
+        text-align: center
+        line-height: .38rem
+        .fa
+          font-size: .18rem
+          color: #636363
+    .list
+      li
+        height: 1.08rem
+        padding: .18rem .1rem
+        box-sizing: border-box
+        border-top: 2px solid #f8f8f8
+        position: relative
+        overflow: hidden
+        h3
+          position: absolute
+          width: .56rem
+          height: .5rem
+          left: -27px
+          top: -23px
+          font-weight: 200
+          background: #7fdd81
+          color: #ffffff
+          text-align: center
+          line-height: .8rem
+          font-size: .1rem
+          transform: rotate(-45deg)
+        h2
+          height: .26rem
+          & > a:nth-child(1)
+            font-size: .12rem
+            color: #3a3a3a
+            float: left
+            line-height: .26rem
+            .fa
+              font-size: .14rem
+              color: #d1d1d1
+          b:nth-child(2)
+            float: right
+            a
+              font-size: .1rem
+              border-radius: .13rem
+              color: #5dc660
+              border: 1px solid #5dc660
+              padding: .04rem
+            .orange
+              color: #f2aa1b
+              border-color: #f2aa1b
+        .box
+          height: .44rem
+          p
+            text-align: center
+            width: 25%
+            float: left
+            border-right: 2px solid #f8f8f8
+            box-sizing: border-box
+            padding-top: .04rem
+            span:last-child
+              display: block
+              width: 100%
+              text-align: center
+              color: #8a8a8a
+              font-size: .1rem
+              transform: scale(.8)
+              margin-top: .08rem
+          p:nth-child(1)
+            a
+              color: #66c3f3
+          p:nth-child(2) span:nth-child(1),
+          p:nth-child(3) span:nth-child(1)
+            color: #414141
+          p:nth-child(4)
+            border-right: none
+            .fa
+              font-size: .18rem
+              color: #b3b3b3
+      li:nth-child(3) h3, li:nth-child(4) h3
+        background: #f3bb4c
+
+.footer
+  height: .54rem
+  background: #ffffff
+  border-top: 1px solid #ccc
+  box-sizing: border-box
+  a
+    display: block
+    width: 25%
+    float: left
+    text-align: center
+    .fa
+      font-size: .2rem
+      color: #dadadd
+      margin: .06rem 0
+    span
+      color: #5f5f5f
+      display: block
+      text-align: center
+    &:hover, &.footCur
+      .fa ,span
+        color: #e7404c !important
+
+
